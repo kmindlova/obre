@@ -1,2 +1,2 @@
 Obre
-![Logo](img/obre1.png)
+![Logo](obre1.png)
