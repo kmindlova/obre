@@ -24,11 +24,7 @@
     }
 
     .centered-text {
-      background-color: rgba(0, 0, 0, 0.4);
-      padding: 2rem;
-      border-radius: 1rem;
-
-      /* ✨ Fade-in efekt */
+      /* Žádné pozadí, žádný rámeček */
       opacity: 0;
       animation: fadeIn 2s ease-in-out forwards;
     }
@@ -36,7 +32,7 @@
     @keyframes fadeIn {
       from {
         opacity: 0;
-        transform: translateY(20px); /* volitelný jemný pohyb nahoru */
+        transform: translateY(20px);
       }
       to {
         opacity: 1;
@@ -44,22 +40,24 @@
       }
     }
 
-    .centered-text h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
+    h1 {
+      font-size: 3rem;
+      margin: 0 0 1rem 0;
+      font-weight: 600;
     }
 
-    .centered-text p {
-      font-size: 1.2rem;
+    p {
+      font-size: 1.5rem;
       margin: 0;
-      opacity: 0.85;
+      opacity: 0.9;
     }
   </style>
 </head>
 <body>
   <div class="centered-text">
-    <h1>Obre — the device to claim back your presence</h1>
-    <p>Coming soon</p>
+    <h1>Obre</h1>
+    <p>the device to claim back your presence</p>
+    <p><em>Coming soon</em></p>
   </div>
 </body>
 </html>
