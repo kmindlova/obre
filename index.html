@@ -8,16 +8,58 @@
       margin: 0;
       padding: 0;
       height: 100%;
+      font-family: Arial, sans-serif;
+      color: white;
     }
 
     body {
-      background-image: url('AUragradient.png'); /* Cesta k obrázku */
-      background-size: cover;       /* Natáhne obrázek přes celou plochu */
-      background-position: center;  /* Vycentruje */
-      background-repeat: no-repeat; /* Zabrání opakování */
+      background-image: url('AUragradient.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .centered-text {
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 2rem;
+      border-radius: 1rem;
+
+      /* ✨ Fade-in efekt */
+      opacity: 0;
+      animation: fadeIn 2s ease-in-out forwards;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px); /* volitelný jemný pohyb nahoru */
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .centered-text h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .centered-text p {
+      font-size: 1.2rem;
+      margin: 0;
+      opacity: 0.85;
     }
   </style>
 </head>
 <body>
+  <div class="centered-text">
+    <h1>Obre — the device to claim back your presence</h1>
+    <p>Coming soon</p>
+  </div>
 </body>
 </html>
